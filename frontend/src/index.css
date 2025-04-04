@@ -1,0 +1,82 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* Container: Split the screen vertically (50/50) */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Panel: Code Editor & Button */
+.left {
+  width: 50%;
+  padding: 20px;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.left h2 {
+  text-align: center;
+  color: #61dafb;
+}
+
+/* Code Editor Styling */
+.code-editor {
+  background-color: #282c34;
+  min-height: 70%;
+  border-radius: 5px;
+  padding: 15px;
+  color: #abb2bf;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Review Button Styling */
+.review-button {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 0 auto;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.review-button:hover {
+  background-color: #52c0e8;
+  transform: translateY(-3px);
+}
+
+/* Right Panel: Review Response */
+.right {
+  width: 50%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.right h2 {
+  text-align: center;
+  color: #61dafb;
+}
+
+/* Review Response Panel Styling */
+.review-response {
+  background-color: #282c34;
+  min-height: 70%;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
