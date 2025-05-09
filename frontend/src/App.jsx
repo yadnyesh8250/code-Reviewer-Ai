@@ -16,7 +16,11 @@ function App() {
   async function fetchData() {
     try {
       const response = await axios.post('http://localhost:3000/ai/get-responce', { code });
+      console.log(response.data);
       setReview(response.data);
+      
+      
+
     } catch (error) {
       console.error('Error fetching review:', error);
       setReview('Error fetching review. Please try again.');
@@ -24,7 +28,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="container"> 
       <div className="left">
         <h2>Your Code</h2>
         <Editor
