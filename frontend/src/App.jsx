@@ -15,7 +15,7 @@ function App() {
 
   async function fetchData() {
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-responce', { code });
+      const response = await axios.post('https://code-reviewer-ai-rpna.onrender.com/ai/get-responce', { code });
       console.log(response.data);
       setReview(response.data);
       
