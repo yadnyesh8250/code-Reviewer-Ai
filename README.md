@@ -2,7 +2,7 @@
 
 An intelligent AI-powered code review web app built with the **MERN stack** (MongoDB, Express.js, React, Node.js) and powered by **Google's Gemini AI**. Users can paste their code, and the app will analyze and provide smart suggestions, improvements, and reviews instantly.
 
-![Code Reviewer AI Demo](https://your-demo-image-link-if-any.com)
+![Code Reviewer AI Demo](https://code-reviewer-ai-yq22.vercel.app/)
 
 ---
 
