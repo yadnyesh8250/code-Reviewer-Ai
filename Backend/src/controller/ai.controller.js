@@ -21,4 +21,19 @@ const code=req.body.code;
   return res.send(responce);
   }
 
-  export default aicontroller
+  const getPerviousResponces=async(req,res)=>{
+   const responce =await Responce.find().sort({ _id: -1 }).limit(10);
+   if(!responce)
+   {
+      return res.status(200).send("No responce found")
+   }
+
+   return res.status(200).json(
+      responce
+   )
+  }
+
+  export default aicontroller;
+
+   export {getPerviousResponces}
+   
