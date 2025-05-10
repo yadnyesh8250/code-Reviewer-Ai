@@ -2,8 +2,10 @@ import express from 'express'
 import dotenv from 'dotenv'
 import airoute from './routes/ai.routes.js'
 import cors from 'cors'
+import ConnectDB from './database/index.js'
 
 const app=express()
+ConnectDB()
 
 dotenv.config()
 const corsOptions = {
@@ -12,7 +14,7 @@ const corsOptions = {
     credentials: true, // Allow cookies and credentials if needed
   };
   app.use(cors(corsOptions));
-app.use(express.json())
+app.use(express.json());
 
 app.get("/",(req,res)=>{
     res.send("heelo")
