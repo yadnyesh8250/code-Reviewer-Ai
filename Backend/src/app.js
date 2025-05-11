@@ -9,7 +9,7 @@ ConnectDB()
 
 dotenv.config()
 const corsOptions = {
-    origin: 'https://code-reviewer-ai-yq22.vercel.app', // Allow only this origin
+    origin: 'https://code-reviewer-ai-yq22.vercel.app' ,// Allow only this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     credentials: true, // Allow cookies and credentials if needed
   };
