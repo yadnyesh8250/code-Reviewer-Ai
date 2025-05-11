@@ -13,7 +13,7 @@ const PreviousResponses = () => {
   useEffect(() => {
     const fetchResponses = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/ai/get-pervios-responce');
+        const res = await axios.get('https://code-reviewer-ai-rpna.onrender.com/ai/get-pervios-responce');
         setResponses(res.data);
       } catch (err) {
         console.error('Error fetching responses:', err);
